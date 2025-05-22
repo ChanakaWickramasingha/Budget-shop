@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Online_Grocery_Store</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>HomePage.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+        <servlet-name>SignUp</servlet-name>
+        <servlet-class>user.SignUp</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignUp</servlet-name>
+        <url-pattern>/signup</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AddCrt</servlet-name>
+        <servlet-class>cart.AddtocartServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddCrt</servlet-name>
+        <url-pattern>/addcrt</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AddPrd</servlet-name>
+        <servlet-class>product.ProductInsertServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddPrd</servlet-name>
+        <url-pattern>/addprod</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AddPay</servlet-name>
+        <servlet-class>payment.PaymentInsertServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddPay</servlet-name>
+        <url-pattern>/addpay</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ProdList</servlet-name>
+        <servlet-class>product.ProductListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProdList</servlet-name>
+        <url-pattern>/plist</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ProdUpd</servlet-name>
+        <servlet-class>product.ProductUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProdUpd</servlet-name>
+        <url-pattern>/pupd</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>SupList</servlet-name>
+        <servlet-class>supplier.SupplierListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SupList</servlet-name>
+        <url-pattern>/slist</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>SupAdd</servlet-name>
+        <servlet-class>supplier.SupplierInsertServelet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SupAdd</servlet-name>
+        <url-pattern>/addsup</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>PayList</servlet-name>
+        <servlet-class>payment.PaymentListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PayList</servlet-name>
+        <url-pattern>/paylist</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>SignIn</servlet-name>
+        <servlet-class>user.SignIn</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignIn</servlet-name>
+        <url-pattern>/signin</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>FeaP</servlet-name>
+        <servlet-class>product.FeaturedProduct</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FeaP</servlet-name>
+        <url-pattern>/fep</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AddO</servlet-name>
+        <servlet-class>order.OrderAddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddO</servlet-name>
+        <url-pattern>/addodr</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>CrtL</servlet-name>
+        <servlet-class>cart.CartDataServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CrtL</servlet-name>
+        <url-pattern>/crtitm</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>OdrL</servlet-name>
+        <servlet-class>order.OrderListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OdrL</servlet-name>
+        <url-pattern>/odrlst</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>PrdD</servlet-name>
+        <servlet-class>product.ProductDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PrdD</servlet-name>
+        <url-pattern>/proddel</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>SupUpd</servlet-name>
+        <servlet-class>supplier.SupplierUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SupUpd</servlet-name>
+        <url-pattern>/supd</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>SupDel</servlet-name>
+        <servlet-class>supplier.SupplierDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SupDel</servlet-name>
+        <url-pattern>/supdel</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>PayUpd</servlet-name>
+        <servlet-class>payment.PaymentUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PayUpd</servlet-name>
+        <url-pattern>/payupd</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DelPay</servlet-name>
+        <servlet-class>payment.PaymentDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DelPay</servlet-name>
+        <url-pattern>/delpay</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DelCrt</servlet-name>
+        <servlet-class>cart.CartDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DelCrt</servlet-name>
+        <url-pattern>/delcrt</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>OrdUpd</servlet-name>
+        <servlet-class>order.OrderUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OrdUpd</servlet-name>
+        <url-pattern>/updord</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>OrdDel</servlet-name>
+        <servlet-class>order.OrderDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OrdDel</servlet-name>
+        <url-pattern>/orddel</url-pattern>
+    </servlet-mapping>
+</web-app>
+
